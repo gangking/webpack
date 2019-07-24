@@ -1,0 +1,54 @@
+Arguments: 
+  D:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add -D optimize-css-assets-webpack-plugin
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;d:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Roaming\npm\node_modules\vue;D:\Program Files\nodejs\;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Local\Yarn\bin;C:\flutter\bin;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\Java\jdk1.8.0_121\jre\bin;C:\Android\tools;C:\Android\platform-tools;C:\Program Files\dotnet\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;d:\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  10.15.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: http://r.cnpmjs.org/caniuse-lite/download/caniuse-lite-1.0.30000983.tgz: unexpected end of file
+      at Zlib.zlibOnError [as onerror] (zlib.js:154:17)
+
+npm manifest: 
+  {
+    "name": "one",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "npx webpack",
+      "dist": "npx webpack --config webpack.product.config.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "autoprefixer": "^9.6.1",
+      "css-loader": "^3.0.0",
+      "mini-css-extract-plugin": "^0.7.0",
+      "node-sass": "^4.12.0",
+      "postcss-loader": "^3.0.0",
+      "sass-loader": "^7.1.0",
+      "style-loader": "^0.23.1",
+      "webpack": "^4.35.3",
+      "webpack-cli": "^3.3.5"
+    },
+    "dependencies": {
+      "lodash": "^4.17.14"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,18 @@
+$bgColor: red;
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: $bgColor;
+    font-size: 30px;
+    display: flex;
+    background: url('../static/img/avtar.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.test{
+    display: flex;
+    span {
+        color: red;
+    }
+}
