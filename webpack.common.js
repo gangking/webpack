@@ -4,6 +4,17 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
+    resolve: {
+        alias: {
+            vue$: path.resolve(__dirname, 'src/lib/vue/dist/vue.esm.js'),
+            '@': path.resolve(__dirname, 'src/')
+        },
+        extensions: [".js", ".vue", ".json"] // 默认值: [".js",".json"]
+    },
+    externals: {
+        jquery: 'jQuery',
+        lodash: '_'
+    },
     module: {
         rules: [
             // 'transform-runtime' 插件告诉 babel 要引用 runtime 来代替注入。

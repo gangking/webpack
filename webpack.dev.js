@@ -2,6 +2,9 @@ const path = require('path');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 
+// 打包优化
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
 const webpack = require('webpack');
 
 let devConfig = {
@@ -49,6 +52,7 @@ let devConfig = {
     plugins: [
         new webpack.NamedModulesPlugin(), // 更容易查看(patch)的依赖
         new webpack.HotModuleReplacementPlugin(), // 替换插件
+        new BundleAnalyzerPlugin()
     ]
 };
 

@@ -2,6 +2,8 @@ import _ from 'lodash';
 import './style.css';
 import './a.scss';
 import axios from 'axios';
+import { a, b, c } from '@/b';
+import $ from 'jquery';
 
 function createDomElement() {
   var dom = document.createElement('div');
@@ -42,3 +44,13 @@ const t = new Temp();
 t.Age = 19;
 
 t.show();
+
+console.log('a: ', a);
+console.log('b: ', b);
+console.log('c: ', c);
+
+$(function() {
+  $('.test').css({
+    'background-color': 'yellow'
+  });
+});
